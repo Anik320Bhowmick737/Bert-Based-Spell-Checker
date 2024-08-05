@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta
+      charset="UTF-8"
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>BERT SpellChecker WebApp</title>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to BERT based Spell checker 📖</h1>
+    </header>
+    <div style="position: relative">
+      <section class="main-container">
+        <form class="main">
+          <label class="fake-container">
+            <textarea
+              class="txtinput"
+              id="txtinput"
+              name="txtinput"
+              placeholder=""
+              required
+            ></textarea>
+            <span class="placeholder">Write your text here</span>
+          </label>
+          <button type="submit" class="btn Correct" id="btc">
+            Get Correction
+          </button>
+        </form>
+      </section>
+      <section class="resetBtnSection">
+        <button class="resetBtn btn">Go back</button>
+      </section>
+      <div class="errorSection">
+        <div class="logo">Detected Errors</div>
+        <div class="errorHighlighted" contenteditable="false"></div>
+      </div>
+      <div class="correctSection">
+        <div class="logo">Suggestion</div>
+        <div class="correction" contenteditable="false"></div>
+      </div>
+    </div>
+  </body>
+
+  <footer class="endnote">Developed and maintained by Anik ❤️</footer>
+  <script src="script.js"></script>
+</html>
